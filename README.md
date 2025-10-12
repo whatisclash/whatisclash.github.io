@@ -1,4 +1,4 @@
-# 什么是Clash - 10月6日20.8M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅链接分享  更新时间 2025-10-06 07:57:52
+# 什么是Clash - 10月12日21.1M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅链接分享  更新时间 2025-10-12 10:04:02
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://whatisclash.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://whatisclash.github.io/uploads/2025/10/0-20251006.yaml
-- https://whatisclash.github.io/uploads/2025/10/1-20251006.yaml
-- https://whatisclash.github.io/uploads/2025/10/2-20251006.yaml
-- https://whatisclash.github.io/uploads/2025/10/3-20251006.yaml
-- https://whatisclash.github.io/uploads/2025/10/4-20251006.yaml
+- https://whatisclash.github.io/uploads/2025/10/0-20251012.yaml
+- https://whatisclash.github.io/uploads/2025/10/1-20251012.yaml
+- https://whatisclash.github.io/uploads/2025/10/2-20251012.yaml
+- https://whatisclash.github.io/uploads/2025/10/3-20251012.yaml
+- https://whatisclash.github.io/uploads/2025/10/4-20251012.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://whatisclash.github.io/uploads/2025/10/0-20251006.txt
-- https://whatisclash.github.io/uploads/2025/10/1-20251006.txt
-- https://whatisclash.github.io/uploads/2025/10/2-20251006.txt
-- https://whatisclash.github.io/uploads/2025/10/3-20251006.txt
-- https://whatisclash.github.io/uploads/2025/10/4-20251006.txt
+- https://whatisclash.github.io/uploads/2025/10/0-20251012.txt
+- https://whatisclash.github.io/uploads/2025/10/1-20251012.txt
+- https://whatisclash.github.io/uploads/2025/10/2-20251012.txt
+- https://whatisclash.github.io/uploads/2025/10/3-20251012.txt
+- https://whatisclash.github.io/uploads/2025/10/4-20251012.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://whatisclash.github.io/uploads/2025/10/20251006.json
+- https://whatisclash.github.io/uploads/2025/10/20251012.json
 
 ## 更多Clash节点订阅 ：
 
