@@ -379,14 +379,9 @@ Clash拥有Windows、macOS、Linux、iOS、Android等多个版本，满足不同
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 还能用吗？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 的规则订阅更新机制是怎样的？</h5></div>
     <div class="panel-body">
-        虽然 SSR 项目早已停止维护，但部分服务器和机场仍提供 SSR 节点。SSR 使用的加密与混淆方式能应对部分防火墙检测。不过，建议用户逐步迁移到 V2Ray 或 Trojan 等更现代的协议以获得更好稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何根据延迟自动切换节点？</h5></div>
-    <div class="panel-body">
-        PassWall2 会定期测试节点延迟，并结合策略组自动切换到延迟最低的节点。无需用户手动操作，即可保证网页、视频和游戏流量的高速稳定访问，提高整体网络体验。<hr />    </div>
+        Sing-box 支持远程规则订阅 URL，可自动下载并更新节点和分流规则。用户可设置更新频率，如每天或每小时，确保规则和节点始终保持最新状态，提高网络管理效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 的节点测速结果如何影响分流？</h5></div>
@@ -394,19 +389,9 @@ Clash拥有Windows、macOS、Linux、iOS、Android等多个版本，满足不同
         PassWall2 会根据节点延迟和成功率自动调整策略组选择最优节点。测速结果直接影响程序选择出口，从而提高连接速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的规则订阅更新机制是怎样的？</h5></div>
+    <div class="panel-heading"><h5>PassWall2 的分组策略可以自动切换节点吗？</h5></div>
     <div class="panel-body">
-        Sing-box 支持远程规则订阅 URL，可自动下载并更新节点和分流规则。用户可设置更新频率，如每天或每小时，确保规则和节点始终保持最新状态，提高网络管理效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用在短连接场景下有什么优势？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，能提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
+        可以。用户可以设置策略组，PassWall2 会定期测速并根据延迟或成功率自动选择最优节点，实现智能节点切换，保证网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的策略组如何实现按域名分流？</h5></div>
@@ -414,19 +399,34 @@ Clash拥有Windows、macOS、Linux、iOS、Android等多个版本，满足不同
         Sing-box 支持根据域名规则匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性和流畅体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 还能用吗？</h5></div>
+    <div class="panel-body">
+        虽然 SSR 项目早已停止维护，但部分服务器和机场仍提供 SSR 节点。SSR 使用的加密与混淆方式能应对部分防火墙检测。不过，建议用户逐步迁移到 V2Ray 或 Trojan 等更现代的协议以获得更好稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议的多路复用功能如何提升性能？</h5></div>
     <div class="panel-body">
         SSR 多路复用允许多个短连接共享同一通道，减少握手次数和加密开销。适合游戏、即时通讯等高频短连接场景，提升网络吞吐量和连接稳定性，提高整体上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的分组策略可以自动切换节点吗？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用在短连接场景下有什么优势？</h5></div>
     <div class="panel-body">
-        可以。用户可以设置策略组，PassWall2 会定期测速并根据延迟或成功率自动选择最优节点，实现智能节点切换，保证网络稳定性。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，能提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLess 使用 XTLS 时证书怎么配置更安全？</h5></div>
     <div class="panel-body">
-        推荐使用可信 CA 签发的证书（例如 Let's Encrypt），并为服务器配置正确的域名、SNI 与证书链。避免使用自签名证书或错误域名，以免被客户端拒绝或被中间人攻击检测到。    </div>
+        推荐使用可信 CA 签发的证书（例如 Let's Encrypt），并为服务器配置正确的域名、SNI 与证书链。避免使用自签名证书或错误域名，以免被客户端拒绝或被中间人攻击检测到。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何根据延迟自动切换节点？</h5></div>
+    <div class="panel-body">
+        PassWall2 会定期测试节点延迟，并结合策略组自动切换到延迟最低的节点。无需用户手动操作，即可保证网页、视频和游戏流量的高速稳定访问，提高整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
+    <div class="panel-body">
+        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -476,16 +476,16 @@ Clash拥有Windows、macOS、Linux、iOS、Android等多个版本，满足不同
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-free-node-subscribe-links.htm" title="什么是Clash - 4月21日20.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点订阅链接分享">什么是Clash - 4月21日20.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-9-vless-windows.htm" title="什么是Clash - 5月9日19M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅链接分享">什么是Clash - 5月9日19M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-20-node-share.htm" title="什么是Clash - 4月20日19.3M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享">什么是Clash - 4月20日19.3M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-30-free-vless-node.htm" title="什么是Clash - 4月30日22.1M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享">什么是Clash - 4月30日22.1M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-29-free-node-subscribe-links.htm" title="什么是Clash - 5月29日19.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅链接分享">什么是Clash - 5月29日19.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-free-subscribe-node.htm" title="什么是Clash - 5月6日18.9M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅链接分享">什么是Clash - 5月6日18.9M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-21-node-share.htm" title="什么是Clash - 5月21日18.7M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接分享">什么是Clash - 5月21日18.7M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-node-share-links.htm" title="什么是Clash - 5月3日21.6M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅链接分享">什么是Clash - 5月3日21.6M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅链接分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-12-node-share-links.htm" title="什么是Clash - 5月12日21.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点订阅链接分享">什么是Clash - 5月12日21.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-22-latest-vless-node.htm" title="什么是Clash - 5月22日19.2M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅链接分享">什么是Clash - 5月22日19.2M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-25-today-vless-node.htm" title="什么是Clash - 5月25日21.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅链接分享">什么是Clash - 5月25日21.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-26-free-subscribe-node.htm" title="什么是Clash - 5月26日19.6M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接分享">什么是Clash - 5月26日19.6M/S|免费Singbox节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-14-node-share.htm" title="什么是Clash - 4月14日18.4M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅链接分享">什么是Clash - 4月14日18.4M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-vless-node.htm" title="什么是Clash - 4月13日20.6M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点订阅链接分享">什么是Clash - 4月13日20.6M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-19-node-share-links.htm" title="什么是Clash - 5月19日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅链接分享">什么是Clash - 5月19日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-latest-vless-node.htm" title="什么是Clash - 5月7日20.6M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接分享">什么是Clash - 5月7日20.6M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-28-latest-vless-node.htm" title="什么是Clash - 5月28日22M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点订阅链接分享">什么是Clash - 5月28日22M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-16-today-vless-node.htm" title="什么是Clash - 5月16日20.8M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点订阅链接分享">什么是Clash - 5月16日20.8M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-vless-windows.htm" title="什么是Clash - 5月9日19M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅链接分享">什么是Clash - 5月9日19M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅链接分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -497,10 +497,10 @@ Clash拥有Windows、macOS、Linux、iOS、Android等多个版本，满足不同
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                     </ul>
     </div>
