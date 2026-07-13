@@ -366,41 +366,6 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
-    <div class="panel-body">
-        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的性能比 Clash 好吗？</h5></div>
-    <div class="panel-body">
-        Sing-box 在性能优化上更为出色，特别是在高并发连接下延迟更低。它采用 Go 语言编写并优化了内存占用，比传统 Clash 内核运行更轻盈，尤其适合服务器端部署或移动端设备使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 导入 Clash 订阅后规则丢失，可能原因？</h5></div>
-    <div class="panel-body">
-        部分客户端在解析订阅时只保留节点信息而忽略 rules 或 proxies-group，建议使用支持完整解析的订阅转换器（如 sub-converter）先将订阅转换为兼容格式再导入，或手动合并规则文件。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的重写规则可实现哪些功能？</h5></div>
-    <div class="panel-body">
-        QuantumultX 的重写规则支持请求头修改、响应内容修改、广告屏蔽及自动跳转。结合脚本可实现自动签到、流量统计和定制化网络访问，极大增强客户端灵活性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash.Meta 与原版 Clash 有何不同？</h5></div>
-    <div class="panel-body">
-        Clash.Meta 是社区优化版本，支持更多传输协议，如 Hysteria、TUIC、Reality 等。它还增强了 DNS 处理逻辑和脚本分流能力，适合追求极致速度和灵活规则配置的高级用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的 DNS 模块如何工作？</h5></div>
-    <div class="panel-body">
-        Sing-box 内置 DNS 模块，支持 fake-ip 模式和纯直连模式。它可根据规则选择不同的上游 DNS 服务，从而实现国内外域名智能分流，减少访问延迟。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 使用哪种加密算法？</h5></div>
-    <div class="panel-body">
-        Hysteria2 默认使用 AEAD 加密算法（如 ChaCha20-Poly1305），并可结合 TLS 层加密保障安全性。其设计兼顾速度与抗干扰能力，适合高延迟跨境网络环境。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 是否支持应用分流？</h5></div>
     <div class="panel-body">
         支持。Surfboard 可通过策略组和规则文件将不同应用流量分配到指定节点，保证游戏、视频和浏览器流量走最优节点，提高访问速度和网络稳定性。<hr />    </div>
@@ -411,9 +376,44 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         TCP 分流适合网页、下载和视频播放，UDP 分流适合游戏、语音和实时视频。Netch 可同时代理 TCP 和 UDP 流量，实现精准分流，保证不同应用的最佳性能。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的重写规则可实现哪些功能？</h5></div>
+    <div class="panel-body">
+        QuantumultX 的重写规则支持请求头修改、响应内容修改、广告屏蔽及自动跳转。结合脚本可实现自动签到、流量统计和定制化网络访问，极大增强客户端灵活性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆参数该如何填写？</h5></div>
     <div class="panel-body">
-        SSR 混淆参数位于节点配置中，通常选择如 tls1.2_ticket_auth 或 http_simple。参数字段可以自定义伪装主机或路径，以模拟正常流量行为，从而提高隐蔽性和抗封锁能力。    </div>
+        SSR 混淆参数位于节点配置中，通常选择如 tls1.2_ticket_auth 或 http_simple。参数字段可以自定义伪装主机或路径，以模拟正常流量行为，从而提高隐蔽性和抗封锁能力。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
+    <div class="panel-body">
+        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 使用哪种加密算法？</h5></div>
+    <div class="panel-body">
+        Hysteria2 默认使用 AEAD 加密算法（如 ChaCha20-Poly1305），并可结合 TLS 层加密保障安全性。其设计兼顾速度与抗干扰能力，适合高延迟跨境网络环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash.Meta 与原版 Clash 有何不同？</h5></div>
+    <div class="panel-body">
+        Clash.Meta 是社区优化版本，支持更多传输协议，如 Hysteria、TUIC、Reality 等。它还增强了 DNS 处理逻辑和脚本分流能力，适合追求极致速度和灵活规则配置的高级用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 导入 Clash 订阅后规则丢失，可能原因？</h5></div>
+    <div class="panel-body">
+        部分客户端在解析订阅时只保留节点信息而忽略 rules 或 proxies-group，建议使用支持完整解析的订阅转换器（如 sub-converter）先将订阅转换为兼容格式再导入，或手动合并规则文件。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的 DNS 模块如何工作？</h5></div>
+    <div class="panel-body">
+        Sing-box 内置 DNS 模块，支持 fake-ip 模式和纯直连模式。它可根据规则选择不同的上游 DNS 服务，从而实现国内外域名智能分流，减少访问延迟。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的性能比 Clash 好吗？</h5></div>
+    <div class="panel-body">
+        Sing-box 在性能优化上更为出色，特别是在高并发连接下延迟更低。它采用 Go 语言编写并优化了内存占用，比传统 Clash 内核运行更轻盈，尤其适合服务器端部署或移动端设备使用。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -443,11 +443,11 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <div class="row">
             <div class="text-center">
-                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
                     <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
                 </a>
                 <dl>
-                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></dt>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
                     <dd>
                         <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
                 </dl>
@@ -461,16 +461,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-7-latest-vless-node.htm" title="什么是Clash - 5月7日20.6M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接分享">什么是Clash - 5月7日20.6M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-24-free-subscribe-node.htm" title="什么是Clash - 6月24日20.5M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点订阅链接分享">什么是Clash - 6月24日20.5M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-23-vless-node.htm" title="什么是Clash - 5月23日20.2M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅链接分享">什么是Clash - 5月23日20.2M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-6-free-node-subscribe.htm" title="什么是Clash - 7月6日22.7M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅链接分享">什么是Clash - 7月6日22.7M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-17-free-vless-node.htm" title="什么是Clash - 6月17日22.9M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅链接分享">什么是Clash - 6月17日22.9M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-27-vless-node.htm" title="什么是Clash - 5月27日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点订阅链接分享">什么是Clash - 5月27日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-12-vless-windows.htm" title="什么是Clash - 6月12日22.4M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点订阅链接分享">什么是Clash - 6月12日22.4M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-29-node-share-links.htm" title="什么是Clash - 6月29日18.6M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点订阅链接分享">什么是Clash - 6月29日18.6M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-vless-node-share.htm" title="什么是Clash - 5月10日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅链接分享">什么是Clash - 5月10日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅链接分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-29-free-node-subscribe-links.htm" title="什么是Clash - 5月29日19.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅链接分享">什么是Clash - 5月29日19.9M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-5-today-vless-node.htm" title="什么是Clash - 7月5日21.1M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享">什么是Clash - 7月5日21.1M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-13-free-node-subscribe-links.htm" title="什么是Clash - 7月13日19.4M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅链接分享">什么是Clash - 7月13日19.4M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-13-node-share-links.htm" title="什么是Clash - 6月13日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅链接分享">什么是Clash - 6月13日20.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-22-free-subscribe-node.htm" title="什么是Clash - 6月22日21.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅链接分享">什么是Clash - 6月22日21.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-28-free-node-subscribe.htm" title="什么是Clash - 6月28日21.1M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接分享">什么是Clash - 6月28日21.1M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-8-free-node-subscribe.htm" title="什么是Clash - 6月8日22.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅链接分享">什么是Clash - 6月8日22.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-15-vless-node.htm" title="什么是Clash - 6月15日21.3M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接分享">什么是Clash - 6月15日21.3M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-12-free-node-subscribe.htm" title="什么是Clash - 7月12日19.1M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点订阅链接分享">什么是Clash - 7月12日19.1M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-9-node-share-links.htm" title="什么是Clash - 7月9日19.1M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接分享">什么是Clash - 7月9日19.1M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点订阅链接分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-7-node-share-links.htm" title="什么是Clash - 7月7日19.8M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅链接分享">什么是Clash - 7月7日19.8M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅链接分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -482,13 +482,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                     </ul>
     </div>
@@ -516,7 +513,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
                                 <p class="text-white-50 f-15 mb-0">
                 <a href="/">What is Clash中文网</a> 版权所有 Powered by WordPress
             </p>
